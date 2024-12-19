@@ -1,11 +1,7 @@
+import HeroButtons from "./HeroButtons";
 import Image from "next/image";
-import Link from "next/link";
 import localFont from 'next/font/local';
 import peachLabsLogo from "../../../public/images/peach_labs.svg"
-
-import { BsGlobe } from "react-icons/bs";
-import { BsInstagram } from "react-icons/bs";
-import { BsTwitter } from "react-icons/bs";
 
 
 const myFont = localFont({ src: '../../../public/fonts/Bladerounded-Regular.ttf' })
@@ -21,21 +17,9 @@ const Hero = () => {
             </div>
             <div className="flex flex-col w-2/3 h-4/5">
                 <div className="flex flex-row justify-end gap-5 w-full h-1/3">
-                    <div className="bg-peachyblue h-8 w-12 flex p-3 justify-center items-center rounded-md">
-                        <Link href="https://peachlabs.io/" target="_blank">
-                            <BsGlobe fontSize={18} className="text-white"/>
-                        </Link>
-                    </div>
-                    <div className="bg-peachyblue h-8 w-12 flex p-3 justify-center items-center rounded-md">
-                        <Link href="https://www.instagram.com/peachlabs.io" target="_blank">
-                            <BsInstagram fontSize={18} className="text-white"/>
-                        </Link>
-                    </div>
-                    <div className="bg-peachyblue h-8 w-12 flex p-3 justify-center items-center rounded-md">
-                        <Link href="https://x.com/ThePeachLabs" target="_blank">
-                            <BsTwitter fontSize={18} className="text-white"/>
-                        </Link>
-                    </div>
+                    <HeroButtons link="https://peachlabs.io/" icon="globe" />
+                    <HeroButtons link="https://www.instagram.com/peachlabs.io" icon="instagram" />
+                    <HeroButtons link="https://x.com/ThePeachLabs" icon="twitter" />
                 </div>
                 <div className="flex items-end justify-end w-full h-2/3">
                     <h1 className={`${myFont.className} text-peachyblue text-4xl`}>Peach Labs</h1>

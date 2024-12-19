@@ -1,14 +1,10 @@
-import Image from "next/image";
 import Link from "next/link";
-
-import peachLabsLogo from "../../../public/images/peach_labs.svg"
-
 import { BsGlobe } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
 
 
-function ContactIcon(props) {
+const ContactIcon = (props) => {
     if (props.icon == 'globe') {
         return <BsGlobe fontSize={18} className="text-white"/>;
     } else if (props.icon =='instagram') {
@@ -16,7 +12,7 @@ function ContactIcon(props) {
     } else if (props.icon =='twitter') {
         return <BsTwitter fontSize={18} className="text-white"/>;
     }
-}
+};
 
 const InfoCardItem = (props) => {
     return(
