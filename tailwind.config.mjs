@@ -10,6 +10,11 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        peachypeach: "#FF6F61",
+        peachybeige: "#FFF4E6",
+        peachyblue: '#2A2D43',
+        peachymint: '#A6D6B8',
+        peachygray: '#595959',
       },
     },
   },
