@@ -18,8 +18,8 @@ const ProjectItem = (props) => {
                 </p>
                 <div className="w-36 bg-transparent border-2 border-peachymint py-1 rounded-full self-center hover:bg-peachymint text-peachymint hover:text-peachyblue">
                     <Link href={props.link} target="_blank" className="flex items-center justify-center gap-2 uppercase">
-                        <h4 className="text-md font-semibold">Check it</h4>
                         <FiLink fontSize={16}/>
+                        <h4 className="text-md font-semibold">Check it</h4>
                     </Link>
                 </div>
             </div>

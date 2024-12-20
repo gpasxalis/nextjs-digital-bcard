@@ -3,7 +3,6 @@ import Image from "next/image";
 import peachLabsLogo from "../../../public/images/peach_labs.svg"
 
 
-
 const Hero = () => {
     return(
         <div className="bg-peachypeach w-full rounded-t-md h-48 p-3 flex justify-between items-center">
@@ -14,9 +13,9 @@ const Hero = () => {
             </div>
             <div className="flex flex-col w-2/3 h-4/5">
                 <div className="flex flex-row justify-end gap-5 w-full h-1/3">
-                    <HeroButtons link="https://peachlabs.io/" icon="globe" />
-                    <HeroButtons link="https://www.instagram.com/peachlabs.io" icon="instagram" />
-                    <HeroButtons link="https://x.com/ThePeachLabs" icon="twitter" />
+                    <HeroButtons link="https://peachlabs.io/" icon="globe" id="peachlabs_website" />
+                    <HeroButtons link="https://www.instagram.com/peachlabs.io" icon="instagram" id="peachlabs_instagram" />
+                    <HeroButtons link="https://x.com/ThePeachLabs" icon="twitter" id="peachlabs_twitter" />
                 </div>
                 <div className="flex items-end justify-end w-full h-2/3">
                     <h1 className="font-bladeRounded text-peachyblue text-4xl">Peach Labs</h1>
@@ -26,5 +25,6 @@ const Hero = () => {
         </div>
     );
 };
+
 
 export default Hero;
