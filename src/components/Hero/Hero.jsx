@@ -1,10 +1,7 @@
 import HeroButtons from "./HeroButtons";
 import Image from "next/image";
-import localFont from 'next/font/local';
 import peachLabsLogo from "../../../public/images/peach_labs.svg"
 
-
-const myFont = localFont({ src: '../../../public/fonts/Bladerounded-Regular.ttf' })
 
 
 const Hero = () => {
@@ -22,7 +19,7 @@ const Hero = () => {
                     <HeroButtons link="https://x.com/ThePeachLabs" icon="twitter" />
                 </div>
                 <div className="flex items-end justify-end w-full h-2/3">
-                    <h1 className={`${myFont.className} text-peachyblue text-4xl`}>Peach Labs</h1>
+                    <h1 className="font-bladeRounded text-peachyblue text-4xl">Peach Labs</h1>
                 </div>
             </div>
             

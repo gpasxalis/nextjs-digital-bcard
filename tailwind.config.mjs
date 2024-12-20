@@ -16,6 +16,11 @@ export default {
         peachymint: '#A6D6B8',
         peachygray: '#595959',
       },
+      fontFamily: {
+        bladeRounded: ["var(--font-blade-rounded)"],
+        geistSans: ["var(--font-geist-sans)"],
+        geistMono: ["var(--font-geist-mono"],
+      }
     },
   },
   plugins: [],

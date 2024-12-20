@@ -1,21 +1,19 @@
 import ProjectItem from "./ProjectItem";
-import Image from "next/image";
-import Link from "next/link";
-import localFont from 'next/font/local';
 
-import { FiLink } from "react-icons/fi";
+import NftProject from "../../../public/images/AZUKI.png"
+import Etoy from "../../../public/images/etoy.png"
+import Yukitots from "../../../public/images/Yukitots.png"
+import Milo from "../../../public/images/Pillow-Milo.png"
 
-
-const myFont = localFont({ src: '../../../public/fonts/Bladerounded-Regular.ttf' })
 
 
 const Projects = () => {
     return(
         <div className="w-full rounded-t-md h-max px-3 py-5 flex flex-col justify-between gap-6">
-            <h2 className={`${myFont.className} font-bold text-peachyblue text-xl uppercase`}>Projects</h2>
+            <h2 className="font-bladeRounded font-bold text-peachyblue text-2xl uppercase">Projects</h2>
 
             <ProjectItem 
-                image = "NFT Project"
+                image = {NftProject}
 
                 title="NFT Project" 
             
@@ -27,7 +25,7 @@ const Projects = () => {
             />
 
             <ProjectItem 
-                image = "Yukitots"
+                image = {Yukitots}
 
                 title="Yukitots" 
             
@@ -39,7 +37,7 @@ const Projects = () => {
             />
 
             <ProjectItem 
-                image = "Milo"
+                image = {Milo}
 
                 title="Pillow & Milo" 
             
@@ -52,7 +50,7 @@ const Projects = () => {
             />
 
             <ProjectItem 
-                image = "Etoy"
+                image = {Etoy}
 
                 title="Etoy" 
             

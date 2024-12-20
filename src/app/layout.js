@@ -1,5 +1,12 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import localFont from 'next/font/local';
 import "./globals.css";
+
+
+const bladeRounded = localFont({ 
+  src: '../../public/fonts/Bladerounded-Regular.ttf',
+  variable: '--font-blade-rounded',
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,7 +30,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${bladeRounded.variable} antialiased`}
       >
         {children}
       </body>
